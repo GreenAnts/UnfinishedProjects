@@ -1,0 +1,139 @@
+:root {
+    --bg: #0f172a; /* Deep Slate */
+    --card-bg: #1e293b;
+    --accent: #60a5fa; /* Soft Blue */
+    --text: #f1f5f9;
+    --muted: #94a3b8;
+    --border: #334155;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+}
+
+header {
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.logo span { color: var(--accent); }
+
+.nav-links a {
+    color: var(--muted);
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--accent); }
+
+.hero {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 6rem 1.5rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+.hero-text {
+    font-size: 1.25rem;
+    color: var(--muted);
+    max-width: 700px;
+    margin: 0 auto 4rem;
+}
+
+.hub-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid var(--border);
+    transition: transform 0.2s, border-color 0.2s;
+    text-align: left;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+}
+
+.card h2 { margin-bottom: 1rem; font-family: 'Space Grotesk'; }
+
+.card p { color: var(--muted); margin-bottom: 2rem; font-size: 0.95rem; }
+
+.btn { color: var(--accent); font-weight: 600; font-size: 0.85rem; letter-spacing: 0.05em; }
+
+.manifesto {
+    background: #161e2e;
+    padding: 6rem 1.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.content-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.manifesto h2 { margin-bottom: 2rem; font-family: 'Space Grotesk'; }
+
+.manifesto p { margin-bottom: 1.5rem; color: var(--muted); }
+
+.tech-stack {
+    margin-top: 3rem;
+    font-size: 0.8rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+
+footer {
+    padding: 4rem 1.5rem;
+    text-align: center;
+    border-top: 1px solid var(--border);
+}
+
+.footer-links { margin-top: 1rem; }
+
+.footer-links a { color: var(--muted); font-size: 0.9rem; text-decoration: underline; }
+
+@media (max-width: 600px) {
+    .hub-options { grid-template-columns: 1fr; }
+}
