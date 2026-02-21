@@ -1,5 +1,7 @@
 # Unfinished Projects - Landing Page
 
+![](images/og-image.png "United, we can create a better world!")
+
 This is the central gateway for Unfinished Projects, a collaborative hub for tinkerers, artists, and open-source advocates. 
 
 This repository hosts the static landing page found at unfinishedprojects.net. Our wider ecosystem—including the forum and wiki—is self-hosted via Cloudron.
