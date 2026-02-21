@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Guide | Unfinished Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="guide-page">
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/touch-icon.png" alt="Gear Icon" class="logo-icon">
+                    <span class="logo-text">UnfinishedProjects</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="https://forum.unfinishedprojects.net">Forum</a>
+                <a href="https://wiki.unfinishedprojects.net">Wiki</a>
+                <a href="https://forum.unfinishedprojects.net/category/1/news">News</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-mini">
+            <h1>The Workshop Guide</h1>
+            <p class="hero-text">A quick walkthrough of how we collaborate.</p>
+        </section>
+
+        <div class="binder">
+            <div class="binder-tabs">
+                <button class="tab-btn active" onclick="openTab(event, 'forum-tab')">1. The Forum</button>
+                <button class="tab-btn" onclick="openTab(event, 'wiki-tab')">2. The Wiki</button>
+                <button class="tab-btn" onclick="openTab(event, 'synergy-tab')">3. The Interaction</button>
+            </div>
+
+            <div class="binder-body">
+                <div id="forum-tab" class="tab-content active-content">
+                    <div class="sub-tabs">
+                        <button class="sub-btn active" onclick="openSubTab(event, 'forum-sub-1')">Conversation</button>
+                        <button class="sub-btn" onclick="openSubTab(event, 'forum-sub-2')">Collaboration</button>
+                    </div>
+                    
+                    <div class="sub-tab-container">
+                        <div id="forum-sub-1" class="sub-content active-sub">
+                            <h2>The Digital Living Room</h2>
+                            <p>The Forum is where we hang out. It's for the high-frequency "chatter" of the workshop. Use this for introductions, troubleshooting, and daily logs.</p>
+                        </div>
+                        <div id="forum-sub-2" class="sub-content">
+                            <h2>Finding your Team</h2>
+                            <p>Want to start a project but need a 3D Modeler or a Writer? This is the place to pitch ideas and find your crew in the "Looking for Group" section.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="wiki-tab" class="tab-content">
+                    <div class="sub-tabs">
+                        <button class="sub-btn active" onclick="openSubTab(event, 'wiki-sub-1')">Knowledge</button>
+                        <button class="sub-btn" onclick="openSubTab(event, 'wiki-sub-2')">Tutorials</button>
+                    </div>
+                    
+                    <div class="sub-tab-container">
+                        <div id="wiki-sub-1" class="sub-content active-sub">
+                            <h2>The Library of Truth</h2>
+                            <p>The Wiki is for things that shouldn't disappear. It is a structured home for project manifests, asset lists, and hardware specs.</p>
+                        </div>
+                        <div id="wiki-sub-2" class="sub-content">
+                            <h2>The Blueprint Gallery</h2>
+                            <p>If you've mastered a Libre tool, share the knowledge. Create "How-To" pages that remain editable by the community.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="synergy-tab" class="tab-content">
+                    <div class="sub-tab-container">
+                        <h2>The Cycle of Creation</h2>
+                        <p>Discussion happens in the forum; documentation lives in the wiki. This prevents great knowledge from being lost in a scrolling chat history.</p>
+                        <div class="sketch-box">Start a thread → Get feedback → Move final docs to the Wiki.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="rules-binder">
+            <h2 class="section-title">Community Guidelines</h2>
+            <div class="rules-tabs">
+                <button class="rule-tab active" onclick="openRule(event, 'rule1')">Libre First</button>
+                <button class="rule-tab" onclick="openRule(event, 'rule2')">Kindness</button>
+                <button class="rule-tab" onclick="openRule(event, 'rule3')">Journey</button>
+            </div>
+            <div class="rules-display">
+                <div id="rule1" class="rule-content active-rule">
+                    <h3>Focus on Libre Software</h3>
+                    <p>We prioritize tools that respect user freedom. We advocate for open alternatives whenever possible.</p>
+                </div>
+                <div id="rule2" class="rule-content">
+                    <h3>The "No-Expert" Rule</h3>
+                    <p>Treat everyone as a peer. There are no "dumb questions" here. We value curiosity.</p>
+                </div>
+                <div id="rule3" class="rule-content">
+                    <h3>Celebrate the Unfinished</h3>
+                    <p>Don't be afraid to post a half-baked idea. Our community exists to help you bridge the gap.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function openTab(evt, tabName) {
+            const contents = document.querySelectorAll(".tab-content");
+            contents.forEach(c => c.classList.remove("active-content"));
+            const btns = document.querySelectorAll(".tab-btn");
+            btns.forEach(b => b.classList.remove("active"));
+            document.getElementById(tabName).classList.add("active-content");
+            evt.currentTarget.classList.add("active");
+        }
+
+        function openSubTab(evt, subName) {
+            const parent = evt.currentTarget.closest('.tab-content');
+            const contents = parent.querySelectorAll(".sub-content");
+            contents.forEach(c => c.classList.remove("active-sub"));
+            const btns = parent.querySelectorAll(".sub-btn");
+            btns.forEach(b => b.classList.remove("active"));
+            document.getElementById(subName).classList.add("active-sub");
+            evt.currentTarget.classList.add("active");
+        }
+
+        function triggerTab(index) {
+            const btns = document.querySelectorAll(".tab-btn");
+            btns[index].click();
+        }
+
+        function openRule(evt, ruleId) {
+            const contents = document.querySelectorAll(".rule-content");
+            contents.forEach(c => c.classList.remove("active-rule"));
+            const btns = document.querySelectorAll(".rule-tab");
+            btns.forEach(b => b.classList.remove("active"));
+            document.getElementById(ruleId).classList.add("active-rule");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>
