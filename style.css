@@ -523,9 +523,18 @@ footer {
 
 .hero-mini {
     text-align: center;
-    padding: 4rem 1.5rem 2rem;
-    max-width: 800px;
+    padding: 2rem 1.5rem 1rem; /* Reduced top/bottom padding to save vertical space */
+    max-width: 100%; /* Allows the 75% child width to calculate correctly */
     margin: 0 auto;
+}
+
+.hero-text {
+    font-size: 1.05rem; /* Slightly scaled down from 1.1rem */
+    color: var(--text);
+    width: 75%; /* Set to 75% of the page width as requested */
+    max-width: 1200px; /* Upper limit for massive monitors */
+    margin: 0 auto;
+    line-height: 1.5; /* Tighter line-height than the body default */
 }
 
 .hero-mini h1 {

@@ -29,86 +29,96 @@
 
     <main>
         <section class="hero-mini">
-            <h1>The Workshop Guide</h1>
-            <p class="hero-text">A quick walkthrough of how we collaborate.</p>
+            <h1>Workshop Guide</h1>
+            <p class="hero-text">While the wiki platform will have its own wiki entry to get you up to speed on using the wiki itself, this page will act as a primer for new members to understand the basics of how the forum and wiki can be used in conjunction with one another, and the overall intent and philosophies of our community to best maximize the utilities offered between the two platforms. This is not an exhaustive breakdown, but a jump-start guide to help you understand our intentions for usage.</p>
         </section>
 
         <div class="binder">
             <div class="binder-tabs">
                 <button class="tab-btn active" onclick="openTab(event, 'forum-tab')">1. The Forum</button>
                 <button class="tab-btn" onclick="openTab(event, 'wiki-tab')">2. The Wiki</button>
-                <button class="tab-btn" onclick="openTab(event, 'synergy-tab')">3. The Interaction</button>
+                <button class="tab-btn" onclick="openTab(event, 'connection-tab')">3. The Connection</button>
             </div>
 
             <div class="binder-body">
                 <div id="forum-tab" class="tab-content active-content">
                     <div class="sub-tabs">
-                        <button class="sub-btn active" onclick="openSubTab(event, 'forum-sub-1')">Conversation</button>
-                        <button class="sub-btn" onclick="openSubTab(event, 'forum-sub-2')">Collaboration</button>
+                        <button class="sub-btn active" onclick="openSubTab(event, 'forum-intro')">Intro</button>
+                        <button class="sub-btn" onclick="openSubTab(event, 'forum-rules')">Rules & Guidelines</button>
+                        <button class="sub-btn" onclick="openSubTab(event, 'forum-community')">Community Building</button>
+                        <button class="sub-btn" onclick="openSubTab(event, 'forum-collab')">Collaboration</button>
+                        <button class="sub-btn" onclick="openSubTab(event, 'forum-beyond')">Beyond Your First Project</button>
                     </div>
                     
                     <div class="sub-tab-container">
-                        <div id="forum-sub-1" class="sub-content active-sub">
-                            <h2>The Digital Living Room</h2>
-                            <p>The Forum is where we hang out. It's for the high-frequency "chatter" of the workshop. Use this for introductions, troubleshooting, and daily logs.</p>
+                        <div id="forum-intro" class="sub-content active-sub">
+                            <h2>Intro</h2>
+                            <p>At the end of the day, our forum is a forum — there isn’t anything inherently unique about our forum software. If you have used a forum before, then you should be able to easily navigate our community categories once you have oriented yourself with our rules and intent.</p>
                         </div>
-                        <div id="forum-sub-2" class="sub-content">
-                            <h2>Finding your Team</h2>
-                            <p>Want to start a project but need a 3D Modeler or a Writer? This is the place to pitch ideas and find your crew in the "Looking for Group" section.</p>
+                        <div id="forum-rules" class="sub-content">
+                            <h2>Rules & Guidelines</h2>
+                            <p>Before you post, we kindly ask that you actually read the rules and don’t skim over them. While some of them are your typical “boilerplate” rules, we do take them seriously, and this is your first opportunity to understand the culture and mindset that we are trying to establish. Some categories have “sticky” topics that we also ask you to read prior to posting in that category. Following the guidelines set out in these posts helps our community function smoothly by assisting both with moderation and helping members navigate and find the content they are looking for.</p>
+                        </div>
+                        <div id="forum-community" class="sub-content">
+                            <h2>Community Building</h2>
+                            <p>The forum is intended to help members make meaningful connections. Sometimes those meaningful connections come about in search of specific projects or needs, but other times they come about through simple and rudimentary interactions — interests, hobbies, goals, etc. Meaningful connections are made over time, and sometimes we need to overcome our differences and find common ground. We encourage members to ask questions and learn about things that may not be familiar territory. We can expand our knowledge and better collaborate when we take the time to learn what others have to offer. We strongly emphasize that no one in our community is “better” than anyone else. We may be better at specific tasks or have more knowledge in a specific area, but everyone has something they can bring to the table — so please be humble in your interactions and be ready to learn as well as teach.</p>
+                        </div>
+                        <div id="forum-collab" class="sub-content">
+                            <h2>Collaboration</h2>
+                            <p>When it comes to collaborating, the intent of the forum begins to overlap with that of the wiki. The forum acts as a more “lively” interaction between members to connect and network for specific projects. Whether you have a “libre” project already started and want to find other contributors, or you want to find partners to work on a new project — the forum is intended to be the platform that allows you to initiate and sustain that process.</p>
+                        </div>
+                        <div id="forum-beyond" class="sub-content">
+                            <h2>Beyond Your First Project</h2>
+                            <p>We recognize that although the forum has a chat function, a third-party application better suited to live messaging may be beneficial. We encourage members to use whatever platform is best suited for their project’s development team. However, we hope that members will not simply use our platform to find a team, then abandon the platform after finding collaborators. We want to build a community of lasting connections that will outlast any one project. If members simply move on after starting a project, this resource will cease to be useful for future members.</p>
+                            <br>
+                            <p>Additionally, we built this platform with the understanding that not everyone is well suited for a long-term commitment to a project. We want people to feel comfortable working on various projects in small commitments. If everyone commits a small amount of effort to a few projects, those projects are more likely to succeed than if they depend on a small handful of people to see them through from start to finish. Of course, every project has its own limitations and requirements, but we hope for a lasting community that values the journey of the <em>collection</em> of projects more than any one individual project.</p>
+                            <br>
+                            <p>This mindset should allow the community to thrive and remain active for the continued benefit of everyone. Even if you are extremely committed to a single project, try to take a break every once in a while and see if there are other community projects that could benefit from your experience and skills for a short period of time — possibly offering to complete one small task off their checklist.</p>
                         </div>
                     </div>
                 </div>
 
                 <div id="wiki-tab" class="tab-content">
                     <div class="sub-tabs">
-                        <button class="sub-btn active" onclick="openSubTab(event, 'wiki-sub-1')">Knowledge</button>
-                        <button class="sub-btn" onclick="openSubTab(event, 'wiki-sub-2')">Tutorials</button>
+                        <button class="sub-btn active" onclick="openSubTab(event, 'wiki-intro')">Intro</button>
+                        <button class="sub-btn" onclick="openSubTab(event, 'wiki-rules')">Rules & Guidelines</button>
+                        <button class="sub-btn" onclick="openSubTab(event, 'wiki-content')">Wiki Entries & Content Creation</button>
                     </div>
                     
                     <div class="sub-tab-container">
-                        <div id="wiki-sub-1" class="sub-content active-sub">
-                            <h2>The Library of Truth</h2>
-                            <p>The Wiki is for things that shouldn't disappear. It is a structured home for project manifests, asset lists, and hardware specs.</p>
+                        <div id="wiki-intro" class="sub-content active-sub">
+                            <h2>Intro</h2>
+                            <p>Our wiki platform serves two primary purposes. First, it provides a central place for our community to store, document, or create their projects. By having our projects centralized and easily accessible, we are able to foster a culture that promotes collaboration on many different “libre” projects, instead of each member only focusing on their own project. We want to promote collaboration and sharing of skills to better the collective of projects rather than any one individual project.</p>
+                            <br>
+                            <p>Second, the wiki acts as a central point for other members and the internet at large to easily access Creative Commons content. In the same way that Wikipedia provides easy and open access to information and knowledge, we hope to provide that same access to others in the realm of digital assets, creative insights, and open-source projects.</p>
                         </div>
-                        <div id="wiki-sub-2" class="sub-content">
-                            <h2>The Blueprint Gallery</h2>
-                            <p>If you've mastered a Libre tool, share the knowledge. Create "How-To" pages that remain editable by the community.</p>
+                        <div id="wiki-rules" class="sub-content">
+                            <h2>Rules & Guidelines</h2>
+                            <p>Due to the potential for misuse (malicious or unintended) of the wiki pages, we ask that every editor/contributor go through a brief onboarding process. We try to keep this as concise as possible but find it necessary to ensure the quality of the wiki stays intact and remains useful for everyone well into the future.</p>
+                            <br>
+                            <p>The onboarding process simply involves each individual reading and understanding our intent and rules here, then reaching out to a moderator for access. This simple onboarding process is intended to ensure that each contributor understands the platform as a whole and the big-picture goal of our platform. We want to ensure content remains uniform for easy navigation and that our culture of community collaboration can sometimes supersede individual expectations.</p>
+                        </div>
+                        <div id="wiki-content" class="sub-content">
+                            <h2>Wiki Entries & Content Creation</h2>
+                            <p>The content that can be entered into the wiki is somewhat flexible, but with flexibility often comes confusion. We try our best to compromise between flexibility and structure to keep it organized and useful over an extended period of time. The content is grouped by Shelves > Books > Chapters > Pages. Shelves can only be created by moderators and will generally fall into overarching topics, including “Tutorials,” “Open Source Software,” “Art,” “World Building,” “Non-Digital,” etc.</p>
+                            <br>
+                            <p>If your specific project does not clearly fit into one of these, you may message a moderator and ask them to create a new one or clarify where it may be included. If your project spans multiple categories, then you should choose the one that best fits your project, and if necessary, create entries in multiple categories with only the applicable parts in each, linking your project to the other entries where needed. More specific details and further guidance can be found in the onboarding process.</p>
                         </div>
                     </div>
                 </div>
 
-                <div id="synergy-tab" class="tab-content">
+                <div id="connection-tab" class="tab-content">
                     <div class="sub-tab-container">
-                        <h2>The Cycle of Creation</h2>
-                        <p>Discussion happens in the forum; documentation lives in the wiki. This prevents great knowledge from being lost in a scrolling chat history.</p>
-                        <div class="sketch-box">Start a thread → Get feedback → Move final docs to the Wiki.</div>
+                        <h2>The Connection</h2>
+                        <p>In sum, the forum and the wiki are meant to complement one another and provide a platform for sustained cross-collaboration on a variety of topics. The combination of these two platforms makes “UnfinishedProjects” a reality in hopes of continued and sustained relationships to collaborate on a collective group of libre projects.</p>
+                        <br>
+                        <p>This experiment quickly falls apart if we selfishly focus on our own projects and neglect the overall collective, but if we can come together, forming a helpful and encouraging community, we can create a lasting and constantly improving list of projects that are “slightly less unfinished” than when we started.</p>
+                        <br>
+                        <p>We hope you’ll consider joining our effort to build something that can benefit us all and make lasting connections and improvements along the way.</p>
                     </div>
                 </div>
             </div>
         </div>
-
-        <section class="rules-binder">
-            <h2 class="section-title">Community Guidelines</h2>
-            <div class="rules-tabs">
-                <button class="rule-tab active" onclick="openRule(event, 'rule1')">Libre First</button>
-                <button class="rule-tab" onclick="openRule(event, 'rule2')">Kindness</button>
-                <button class="rule-tab" onclick="openRule(event, 'rule3')">Journey</button>
-            </div>
-            <div class="rules-display">
-                <div id="rule1" class="rule-content active-rule">
-                    <h3>Focus on Libre Software</h3>
-                    <p>We prioritize tools that respect user freedom. We advocate for open alternatives whenever possible.</p>
-                </div>
-                <div id="rule2" class="rule-content">
-                    <h3>The "No-Expert" Rule</h3>
-                    <p>Treat everyone as a peer. There are no "dumb questions" here. We value curiosity.</p>
-                </div>
-                <div id="rule3" class="rule-content">
-                    <h3>Celebrate the Unfinished</h3>
-                    <p>Don't be afraid to post a half-baked idea. Our community exists to help you bridge the gap.</p>
-                </div>
-            </div>
-        </section>
     </main>
 
     <script>
@@ -128,20 +138,6 @@
             const btns = parent.querySelectorAll(".sub-btn");
             btns.forEach(b => b.classList.remove("active"));
             document.getElementById(subName).classList.add("active-sub");
-            evt.currentTarget.classList.add("active");
-        }
-
-        function triggerTab(index) {
-            const btns = document.querySelectorAll(".tab-btn");
-            btns[index].click();
-        }
-
-        function openRule(evt, ruleId) {
-            const contents = document.querySelectorAll(".rule-content");
-            contents.forEach(c => c.classList.remove("active-rule"));
-            const btns = document.querySelectorAll(".rule-tab");
-            btns.forEach(b => b.classList.remove("active"));
-            document.getElementById(ruleId).classList.add("active-rule");
             evt.currentTarget.classList.add("active");
         }
     </script>
